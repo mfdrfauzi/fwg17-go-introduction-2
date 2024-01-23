@@ -6,9 +6,9 @@ import (
 )
 
 func Rounding(n float64) float64 {
-	decimalRound := n * 10.0
+	multipled := n * 10.0
 
-	rounded := math.Round(decimalRound)
+	rounded := math.Round(multipled)
 
 	result := rounded / 10.0
 	fmt.Printf("%.2f\n", result)
