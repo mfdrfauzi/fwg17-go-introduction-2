@@ -26,7 +26,7 @@ func main() {
 
 	//Interface
 	fmt.Println("\n---Interface---")
-	var lingkaran = &app.Lingkaran{
+	var lingkaran = app.Lingkaran{
 		JariJari: 5.0,
 		Tinggi:   3.0,
 	}
