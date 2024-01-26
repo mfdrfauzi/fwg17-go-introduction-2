@@ -20,7 +20,7 @@ func (d *DeretBilangan) Prima() {
 		if isPrime {
 			fmt.Printf("%d", i)
 			if i < d.Limit {
-				fmt.Print(", ")
+				fmt.Print(" ")
 			}
 		}
 	}
@@ -33,7 +33,7 @@ func (d *DeretBilangan) Ganjil() {
 	for i := 1; i <= d.Limit; i += 2 {
 		fmt.Printf("%d", i)
 		if i < d.Limit-1 {
-			fmt.Print(", ")
+			fmt.Print(" ")
 		}
 	}
 	fmt.Println()
@@ -44,8 +44,8 @@ func (d *DeretBilangan) Genap() {
 
 	for i := 2; i <= d.Limit; i += 2 {
 		fmt.Printf("%d", i)
-		if i < d.Limit-1 {
-			fmt.Print(", ")
+		if i < d.Limit {
+			fmt.Print(" ")
 		}
 	}
 	fmt.Println()
@@ -58,7 +58,7 @@ func (d *DeretBilangan) Fibonacci() {
 	for a <= d.Limit {
 		fmt.Printf("%d", a)
 		if a < d.Limit-1 {
-			fmt.Print(", ")
+			fmt.Print(" ")
 		}
 		a, b = b, a+b
 	}
