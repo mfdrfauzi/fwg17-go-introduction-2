@@ -18,7 +18,7 @@ func main() {
 
 	//---Deret---
 	fmt.Println("\n---Deret Bilangan---")
-	deret := app.DeretBilangan{Limit: 20}
+	deret := app.DeretBilangan{Limit: 40}
 	deret.Prima()
 	deret.Ganjil()
 	deret.Genap()
@@ -27,8 +27,8 @@ func main() {
 	//Interface
 	fmt.Println("\n---Interface---")
 	var lingkaran = app.Lingkaran{
-		JariJari: 5.0,
-		Tinggi:   3.0,
+		JariJari: 5,
+		Tinggi:   3,
 	}
 
 	fmt.Printf("Luas Lingkaran: %.2f\n", lingkaran.Luas())

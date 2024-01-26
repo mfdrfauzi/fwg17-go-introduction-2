@@ -21,17 +21,31 @@ type Lingkaran struct {
 	Tinggi   float64
 }
 
-func (l *Lingkaran) Luas() float64 {
+// type Kubus struct {
+// 	sisi float64
+// }
+
+func (l Lingkaran) Luas() float64 {
 	luas := math.Pi * l.JariJari * 2
 	return luas
 }
 
-func (l *Lingkaran) Keliling() float64 {
+func (l Lingkaran) Keliling() float64 {
 	keliling := 2 * math.Pi * l.JariJari
 	return keliling
 }
 
-func (l *Lingkaran) Volume() float64 {
+func (l Lingkaran) Volume() float64 {
 	volume := math.Pi * math.Pow(l.JariJari, 2) * l.Tinggi
 	return volume
 }
+
+// func (k Kubus) Luas() float64 {
+// 	luas := math.Pow(k.sisi, 2)
+// 	return luas
+// }
+
+// func (k Kubus) Keliling() float64 {
+// 	keliling := k.sisi * 12
+// 	return keliling
+// }
