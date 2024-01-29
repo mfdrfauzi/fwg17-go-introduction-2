@@ -28,10 +28,19 @@ func main() {
 	fmt.Println("\n---Interface---")
 	var lingkaran = app.Lingkaran{
 		JariJari: 5,
-		Tinggi:   3,
+		Tabung: app.Tabung{
+			Tinggi: 3,
+		},
+	}
+	var kubus = app.Kubus{
+		Sisi: 6,
 	}
 
 	fmt.Printf("Luas Lingkaran: %.2f\n", lingkaran.Luas())
 	fmt.Printf("Keliling Lingkaran: %.2f\n", lingkaran.Keliling())
 	fmt.Printf("Volume Lingkaran: %.2f\n", lingkaran.Volume())
+
+	fmt.Printf("Luas Kubus: %.f\n", kubus.Luas())
+	fmt.Printf("Keliling Kubus: %.f\n", kubus.Keliling())
+	fmt.Printf("Volume Kubus: %.f\n", kubus.Volume())
 }
